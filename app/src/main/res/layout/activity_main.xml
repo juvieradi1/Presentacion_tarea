@@ -1,0 +1,120 @@
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActvity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:id="@+id/Txt_result"/>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LytContenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView android:id="@+id/LblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nombre" />
+
+    <EditText android:id="@+id/TxtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <Button android:id="@+id/BtnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aceptar"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox android:id="@+id/ChkMarcame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acepto las condiciones y la opcion"
+        android:checked="false"
+        android:textSize="10dp" />
+
+
+    <ImageView android:id="@+id/ImgFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_preferences"
+        android:contentDescription="@string/abc_toolbar_collapse_description"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView android:id="@+id/LblEtiqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Usuario"
+        android:background="#ff1ca5ff"
+        android:typeface="monospace"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ImgFoto"
+        android:layout_alignParentStart="true" />
+
+
+
+    <EditText android:id="@+id/TxtImagenHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:textColorHint="#CFCFCF"
+        android:inputType="text"
+        android:layout_below="@+id/LblEtiqueta"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
+
+    <EditText android:id="@+id/TxtImagenHin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Repetir Usuario"
+        android:textColorHint="#CFCFCF"
+        android:inputType="text"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/TxtImagenHint"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup android:id="@+id/GrbGrupo1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <Switch android:id="@+id/BtnSwitch"
+            android:textOn="on"
+            android:textOff="off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ToggleButton android:id="@+id/BtnToggle"
+            android:textOn="on"
+            android:textOff="off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton android:id="@+id/RbOpcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="opcion_1"
+            android:layout_gravity="right" />
+
+        <RadioButton android:id="@+id/RbOpcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="opcion_2"
+            android:layout_gravity="right" />
+
+    </RadioGroup>
+
+</LinearLayout>
+    </RelativeLayout>
